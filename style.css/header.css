@@ -1,0 +1,84 @@
+*{
+    font-family: 'Hind', sans-serif;
+}
+:root{
+    --primary: rgb(53, 162, 44);
+    --White: #fff;
+    --black:#000;
+    --gray:rgb(170, 170, 170);
+}
+.app-logo{
+    color: var(--primary);
+    font-size: 45px;
+}
+.app-logo span{
+    color: var(--White);
+}
+
+header{
+    position: relative;
+}
+.navbar {
+    position: absolute;
+    top:0;
+    left: 0;
+    z-index: 99999999;
+    width: 100%;
+}
+.navbar-nav li a{
+    color: var(--White);
+}
+
+.navbar-toggler-mobile{
+    background: var(--primary);
+}
+.navbar-toggler-mobile span{
+    color: var(--gray);
+}
+
+.navbar-collapse .show{
+    background: var(--White);
+}
+
+.carousel-item {
+    height: 100vh;
+    position: relative;
+}
+
+ .inside-image{
+    background: var(--black);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left: 0;
+    opacity: 0.4;
+}
+
+
+.custom-carousel-btn button{
+    width: 10px !important;
+    height: 10px !important;
+    border-radius: 50% !important;
+}
+.custom-carousel-btn button .active{
+    background: var(--primary);
+}
+
+#feature {
+    background-image: url(../images/3.jpg);
+}
+#feature::before{
+    background: #000;
+}
+
+#feature .card{
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.2);
+    
+}
+
+#feature .card i{
+    color: var(--primary);
+    font-size: 48px;
+}
